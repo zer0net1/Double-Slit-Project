@@ -21,16 +21,12 @@ The simulation is structured into three layers:
 - Parameters are converted into a JSON object.  
 - JSON is sent via AJAX (JavaScript `fetch`)
 
----
-
 ### **2. Backend (Simulation API)**
 - Controller (`SimulationController.cs`) receives the request.  
 - Validates and deserializes JSON into `SimulationParameters`.  
 - Creates an instance of `DoubleSlitSimulator`.  
 - Computes simulation results.  
 - Returns a `SimulationResult` as JSON.
-
----
 
 ### **3. Frontend Display**
 - Receives JSON intensity array from the backend.  
