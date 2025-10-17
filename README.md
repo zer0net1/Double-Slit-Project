@@ -8,7 +8,7 @@ It visualizes how light behaves when passing through two narrow slits and produc
 ## Physical Principle
 
 The simulation is based on classical wave interference of monochromatic light.  
-When coherent light of wavelength **λ** passes through two slits of width **a**, separated by a distance **d**, the light **diffracts** and overlaps on a distant screen, forming an interference pattern of bright and dark fringes.
+When coherent light of wavelength **λ** passes through two slits of width **a**, separated by a distance **d**, the light diffracts and overlaps on a distant screen, forming an interference pattern of bright and dark fringes.
 
 ---
 
