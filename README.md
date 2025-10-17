@@ -14,7 +14,7 @@ When coherent light of wavelength **λ** passes through two slits of width **a**
 
 ## Implementation Overview
 
-The simulation is structured into **three layers**:
+The simulation is structured into three layers:
 
 ### **1. Frontend (Razor Pages)**
 - User enters parameters: wavelength, slit width, distance, etc.  
