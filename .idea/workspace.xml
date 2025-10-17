@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aff5ec20-9341-4aa5-83e1-d9ba2a1fc7c1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DoubleSE/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DoubleSlitProject/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoubleSlitBackEnd/Computing/DoubleSlitSimulator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoubleSlitBackEnd/Computing/SimulationParameters.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoubleSlitBackEnd/Computing/SimulationResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoubleSlitBackEnd/Computing/nmToRGB.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoubleSlitBackEnd/Controllers/SimulationHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoubleSlitBackEnd/DoubleSlitBackEnd.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoubleSlitBackEnd/DoubleSlitBackEnd.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoubleSlitBackEnd/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoubleSlitBackEnd/Properties/launchSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoubleSlitBackEnd/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoubleSlitProject.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoubleSlitSolution.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoubleSlitWeb/Pages/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoubleSlitWeb/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/css/site.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/js/CanvasHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DoubleSE/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DoubleSlitProject/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DoubleSE/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DoubleSlitProject/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DoubleSE/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DoubleSlitProject/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/DoubleSE.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/DoubleSlitWeb.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/Pages/Error.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/Pages/Error.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/Pages/Error.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/Pages/Error.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/Pages/Index.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/Pages/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/Pages/Index.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/Pages/Privacy.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/Pages/Privacy.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/Pages/Privacy.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/Pages/Privacy.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/Pages/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/Pages/Shared/_Layout.cshtml.css" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/Pages/Shared/_Layout.cshtml.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/Pages/Shared/_ValidationScriptsPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/Pages/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/Pages/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/Pages/_ViewImports.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/Pages/_ViewStart.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/Pages/_ViewStart.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitBackEnd/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/css/site.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/js/simulation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/jquery-validation/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/jquery-validation/dist/additional-methods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/jquery-validation/dist/jquery.validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/jquery/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/jquery/dist/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/jquery/dist/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/jquery/dist/jquery.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/jquery/dist/jquery.min.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/jquery/dist/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/jquery/dist/jquery.slim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/jquery/dist/jquery.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/jquery/dist/jquery.slim.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DoubleSE/wwwroot/lib/jquery/dist/jquery.slim.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleSlitWeb/wwwroot/lib/jquery/dist/jquery.slim.min.map" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "zer0net1"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/zer0net1/Double-slit-experiment.git",
+    "accountId": "b117f0b5-fd5e-42ff-9dea-cfc6663e148b"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="34Ac1Mklsq79QUoebx07b04gmit" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/netzer0/RiderProjects/DoubleSlitProject",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aff5ec20-9341-4aa5-83e1-d9ba2a1fc7c1" name="Changes" comment="" />
+      <created>1760659600377</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760659600377</updated>
+      <workItem from="1760659601503" duration="19000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
