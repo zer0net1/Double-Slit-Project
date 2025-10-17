@@ -1,0 +1,6 @@
+@DoubleSlitBackEnd_HostAddress = http://localhost:7255
+
+GET {{DoubleSlitBackEnd_HostAddress}}/SimulationHandler/
+Accept: application/json
+
+###

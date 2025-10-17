@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+    background: #111;
+    color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+    color: #525151;
+}
+
+label {
+    margin: 0 10px;
+}
+
+canvas {
+    background: black;
+    border: 1px solid #444;
+    display: block;
+    margin: 0 auto;
+}

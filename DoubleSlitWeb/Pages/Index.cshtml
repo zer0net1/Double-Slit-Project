@@ -1,0 +1,40 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Double Slit Experiment Simulation";
+}
+
+<div class="container">
+    <h1>@ViewData["Title"]</h1>
+    
+    <div class="control">
+        <div>
+            <input type="range" id="wavelength" min="250" max="750" value="600" step="1" style="width: 500px;">
+            <label id="wavelengthL">Wavelength: 600nm</label>
+        </div>
+        <div>
+            <input type="range" id="slitWidth" min="10" max="100" value="20" step="1" style="width: 500px;">
+            <label id="slitWidthL">Slit Width: 50µm</label>
+        </div>
+        <div>
+            <input type="range" id="slitSeparation" min="100" max="500" value="100" step="1" style="width: 500px;">
+            <label id="slitSeparationL">Slit Separation: 100µm</label>
+        </div>
+        <div>
+            <input type="range" id="screenDistance" min="1" max="200" value="100" step="1" style="width: 500px;">
+            <label id="screenDistanceL">Screen Distance: 100cm</label>
+        </div>
+            <input type="range" id="ScreenPhysicalWidth" min="0.001" max="0.1" value="0.1" step="0.001" style="width: 500px"/>
+            <label id="ScreenPhysicalWidthL">Physical Width per Pixel: 0.1</label>
+        <div>
+            <label id="HuygensL">Fraunhofer method</label>
+            <input type="checkbox" id="Huygens" value="false"/>
+        </div>
+        <div>
+            <input type="range" id="SamplesPerSlit" min="20" max="5000" value="150" step="1" style="display: none; width: 500px"/>
+            <label id="SamplesPerSlitL" style="display: none;">Amount of Samples: 150</label>
+        </div>
+    </div>
+    <script></script>
+    <canvas id="simulationCanvas" width="800" height="400"></canvas>
+</div>
