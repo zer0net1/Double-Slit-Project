@@ -1,7 +1,7 @@
 # Double-Slit Simulation — C# Razor Pages Project
 
 An interactive simulation of the double-slit interference experiment, implemented in C# (Razor Pages).  
-It visualizes how light behaves when passing through two narrow slits and produces an interference pattern on a screen — one of the cornerstone demonstrations of wave–particle duality in physics.
+It visualizes how light behaves when passing through two narrow slits and produces an interference pattern on a screen.
 
 ---
 
@@ -52,7 +52,7 @@ The simulator supports two calculation modes:
 
 Valid when the observation screen is in the far field.
 
-The **intensity** is computed using the analytical expression:
+The intensity is computed using the analytical expression:
 
 I(x) = I₀ · cos²(π·d·sinθ / λ) · [ sin(π·a·sinθ / λ) / (π·a·sinθ / λ) ]²
 
@@ -79,7 +79,7 @@ where:
 - **rₙ** — distance from that source to point *P*  
 - **k = 2π / λ** — wavenumber  
 
-The **intensity** at *P* is the squared magnitude of this sum:
+The intensity at *P* is the squared magnitude of this sum:
 
 I(P) = (1 / λ²) · | Σₙ [ Aₙ · e^(i·k·rₙ) / rₙ ] |²
 
