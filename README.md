@@ -91,14 +91,5 @@ I(P) = (1 / λ²) [ (Σₙ aₙ cos(k·rₙ))² + (Σₙ aₙ sin(k·rₙ))² ]
 
 ---
 
-## Technologies Used
-- **C# / .NET Razor Pages**
-- **HTML Canvas**
-- **AJAX**
-- **JSON Serialization**
-- **Complex Wave Computation**
-
----
-
 ##  Example Output
 <img width="1426" height="769" alt="image" src="https://github.com/user-attachments/assets/194eee89-6ddd-4090-8e5c-a842ae0dac79" />
