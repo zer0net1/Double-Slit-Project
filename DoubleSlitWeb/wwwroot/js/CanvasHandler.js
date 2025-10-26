@@ -51,7 +51,7 @@ function drawErrorGraph(errorResult) {
     let chart = new CanvasJS.Chart("chartContainer", {
         animationEnabled: true,
         exportEnabled: true,
-        theme: "light1", // "light1", "light2", "dark1", "dark2"
+        theme: "light1",
         backgroundColor: "white",
         title: {
             text: "Computing Error to Analytical Far Field Approximation"
@@ -65,7 +65,7 @@ function drawErrorGraph(errorResult) {
             title: "samples",
         },
         data: [{
-            type: "line", //change type to bar, line, area, pie, etc
+            type: "line",
             indexLabelFontColor: "#f11818",
             color: "#f11818",
             indexLabelFontSize: 16,
