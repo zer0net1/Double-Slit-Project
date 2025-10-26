@@ -1,0 +1,7 @@
+/Users/netzer0/RiderProjects/DoubleSE/DoubleSlitWeb/bin/Release/net9.0/publish/DoubleSlitWeb
+/Users/netzer0/RiderProjects/DoubleSE/DoubleSlitWeb/bin/Release/net9.0/publish/appsettings.Development.json
+/Users/netzer0/RiderProjects/DoubleSE/DoubleSlitWeb/bin/Release/net9.0/publish/appsettings.json
+/Users/netzer0/RiderProjects/DoubleSE/DoubleSlitWeb/bin/Release/net9.0/publish/DoubleSlitWeb.dll
+/Users/netzer0/RiderProjects/DoubleSE/DoubleSlitWeb/bin/Release/net9.0/publish/DoubleSlitWeb.deps.json
+/Users/netzer0/RiderProjects/DoubleSE/DoubleSlitWeb/bin/Release/net9.0/publish/DoubleSlitWeb.runtimeconfig.json
+/Users/netzer0/RiderProjects/DoubleSE/DoubleSlitWeb/bin/Release/net9.0/publish/DoubleSlitWeb.pdb

@@ -1,0 +1,7 @@
+/Users/netzer0/Downloads/dbsexe/DoubleSlitWeb
+/Users/netzer0/Downloads/dbsexe/appsettings.Development.json
+/Users/netzer0/Downloads/dbsexe/appsettings.json
+/Users/netzer0/Downloads/dbsexe/DoubleSlitWeb.dll
+/Users/netzer0/Downloads/dbsexe/DoubleSlitWeb.deps.json
+/Users/netzer0/Downloads/dbsexe/DoubleSlitWeb.runtimeconfig.json
+/Users/netzer0/Downloads/dbsexe/DoubleSlitWeb.pdb
