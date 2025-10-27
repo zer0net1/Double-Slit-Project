@@ -89,4 +89,5 @@
 /Users/netzer0/RiderProjects/DoubleSE/DoubleSlitWeb/obj/Debug/net9.0/DoubleSlitWeb.genruntimeconfig.cache
 /Users/netzer0/RiderProjects/DoubleSE/DoubleSlitWeb/obj/Debug/net9.0/ref/DoubleSlitWeb.dll
 /Users/netzer0/RiderProjects/DoubleSE/DoubleSlitWeb/obj/Debug/net9.0/compressed/fdwhdi0ukd-fxbr5sfq7o.gz
-/Users/netzer0/RiderProjects/DoubleSE/DoubleSlitWeb/obj/Debug/net9.0/compressed/b3wdxia9sr-8ohb614lcf.gz
+/Users/netzer0/RiderProjects/DoubleSE/DoubleSlitWeb/obj/Debug/net9.0/DoubleSlitWeb.sourcelink.json
+/Users/netzer0/RiderProjects/DoubleSE/DoubleSlitWeb/obj/Debug/net9.0/compressed/b3wdxia9sr-deik4k2raq.gz

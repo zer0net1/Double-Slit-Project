@@ -13,6 +13,7 @@ let W_ph = parseFloat(document.getElementById("ScreenPhysicalWidth").value);
 let SamplesPerSlit = parseInt(document.getElementById("SamplesPerSlit").value);
 let PixelCount = document.getElementById("simulationCanvas").width;
 let method = document.getElementById("Huygens").checked;
+let AmountOfSlits = 2;
 
 let userValue = document.getElementById("userValue");
 let more = document.getElementById("other");
@@ -132,38 +133,50 @@ function drawSchematic(slitSeparation, slitWidth, screenDistance, I) {
     }
     
     //Slits
-    startX = Math.floor(schematic.width * (0.48-slitSeparation/2-slitWidth/2));
-    endX   = Math.floor(schematic.width * (0.48-slitSeparation/2+slitWidth/2));
-    startY = Math.floor(schematic.height * 0.75);
-    endY   = Math.floor(schematic.height * 0.8);
-    for (let y = startY; y < endY; y++) {
-        for (let x = startX; x < endX; x++) {
-            index = (y * schematic.width + x) * 4;
-            sdata[index]     = colour[0];
-            sdata[index + 1] = colour[1];
-            sdata[index + 2] = colour[2];
-            sdata[index + 3] = 255;
-        }
+    function drawSlit(startX, endX) {
+        startY = Math.floor(schematic.height * 0.75);
+        endY   = Math.floor(schematic.height * 0.8);
+        for (let y = startY; y < endY; y++) {
+            for (let x = startX; x < endX; x++) {
+                index = (y * schematic.width + x) * 4;
+                sdata[index]     = colour[0];
+                sdata[index + 1] = colour[1];
+                sdata[index + 2] = colour[2];
+                sdata[index + 3] = 255;
+            }
+        } 
     }
-    
-    startX = Math.floor(schematic.width * (0.52+slitSeparation/2-slitWidth/2));
-    endX   = Math.floor(schematic.width * (0.52+slitSeparation/2+slitWidth/2));
-    for (let y = startY; y < endY; y++) {
-        for (let x = startX; x < endX; x++) {
-            index = (y * schematic.width + x) * 4;
-            sdata[index]     = colour[0];
-            sdata[index + 1] = colour[1];
-            sdata[index + 2] = colour[2];
-            sdata[index + 3] = 255;
-        }
+    if (AmountOfSlits === 1) {
+        startX = Math.floor(schematic.width * (0.5-slitWidth/2));
+        endX   = Math.floor(schematic.width * (0.5+slitWidth/2));
+        drawSlit(startX, endX);
+    }
+    else if (AmountOfSlits === 2) {
+        startX = Math.floor(schematic.width * (0.48-slitSeparation/2-slitWidth/2));
+        endX   = Math.floor(schematic.width * (0.48-slitSeparation/2+slitWidth/2));
+        drawSlit(startX, endX);
+        startX = Math.floor(schematic.width * (0.52+slitSeparation/2-slitWidth/2));
+        endX   = Math.floor(schematic.width * (0.52+slitSeparation/2+slitWidth/2));
+        drawSlit(startX, endX);
+    }
+    else {
+        startX = Math.floor(schematic.width * (0.5-slitWidth/2));
+        endX   = Math.floor(schematic.width * (0.5+slitWidth/2));
+        drawSlit(startX, endX);
+        startX = Math.floor(schematic.width * (0.45-slitSeparation-slitWidth/2));
+        endX   = Math.floor(schematic.width * (0.45-slitSeparation+slitWidth/2));
+        drawSlit(startX, endX);
+        startX = Math.floor(schematic.width * (0.55+slitSeparation-slitWidth/2));
+        endX   = Math.floor(schematic.width * (0.55+slitSeparation+slitWidth/2));
+        drawSlit(startX, endX);
     }
     
     //Graph
     startX = Math.floor(schematic.width * 0.1);
     endX   = Math.floor(schematic.width * 0.9);
-     arrayStart = I.length/2 - Math.floor(0.4 * schematic.width);
-     graphHeight = schematic.height * 0.3;
-     yOffset = schematic.height * 0.4;
+    let arrayStart = I.length/2 - Math.floor(0.4 * schematic.width);
+    let graphHeight = schematic.height * 0.3;
+    let yOffset = schematic.height * 0.4;
     for (let x = startX+1; x < endX; x++) {
         let i0 = arrayStart + (x - startX - 1);
         let i1 = arrayStart + (x - startX);
@@ -235,6 +248,7 @@ function ReadParameters() {
     PixelCount = document.getElementById("simulationCanvas").width;
     method = document.getElementById("Huygens").checked;
     
+    
     return JSON.stringify({
         Wavelength: lambda,
         SlitWidth: slitWidth,
@@ -243,7 +257,8 @@ function ReadParameters() {
         ScreenPhysicalWidth: W_ph,
         PixelCount: PixelCount,
         Huygens: method,
-        SamplesPerSlit: SamplesPerSlit
+        SamplesPerSlit: SamplesPerSlit,
+        AmountOfSlits: AmountOfSlits
     });
 }
 
@@ -252,7 +267,7 @@ window.onload = function() {
     runSimulation();
 };
 
-function updateUI(method) {
+function updateMethodUI(method) {
     const SamplesPerSlitL = document.getElementById('SamplesPerSlitL');
     const SamplesPerSlit = document.getElementById('SamplesPerSlit');
     const ErrorGraph = document.getElementById('Check');
@@ -272,36 +287,42 @@ function updateUI(method) {
         Graph.style.display = 'none';
     }
 }
+function updateAmountOfSlits() {
+    if (more.checked) {
+        userValue.style.display = 'inline';
+        AmountOfSlits = document.getElementById('userValue').value;
+    }
+    else {
+        userValue.style.display = 'none';
+        AmountOfSlits = 1;
+    }
+    if (one.checked || more.checked) {
+        huygens.checked = true;
+        fraunhofer.style.display = 'none';
+        fraunhoferL.style.display = 'none';
+        updateMethodUI(fraunhofer);
+    }
+    else {
+        AmountOfSlits = 2;
+        fraunhofer.style.display = 'inline';
+        fraunhoferL.style.display = 'inline';
+        updateMethodUI(huygens)
+    }
+}
 document.addEventListener('DOMContentLoaded', function() {
     const huygens = document.getElementById('Huygens');
     const fraunhofer = document.getElementById('Fraunhofer');
     
     huygens.addEventListener('change', function() {
-        updateUI(this);
+        updateMethodUI(this);
     });
     fraunhofer.addEventListener('change', function() {
-        updateUI(huygens);
+        updateMethodUI(huygens);
     });
 });
 document.querySelectorAll('input[type=radio][name=SlitsAmount]').forEach(radio => {
     radio.addEventListener('change', function() {
-        if (more.checked) {
-            userValue.style.display = 'inline';
-        }
-        else {
-            userValue.style.display = 'none';
-        }
-        if (one.checked || more.checked) {
-            huygens.checked = true;
-            fraunhofer.style.display = 'none';
-            fraunhoferL.style.display = 'none';
-            updateUI(fraunhofer);
-        }
-        else {
-            fraunhofer.style.display = 'inline';
-            fraunhoferL.style.display = 'inline';
-            updateUI(huygens)
-        }
+        updateAmountOfSlits();
     });
 });
 document.getElementById("wavelength").addEventListener("input", function() {
@@ -344,7 +365,23 @@ document.getElementById("Huygens").addEventListener("change", function () {
 });
 document.getElementById("Fraunhofer").addEventListener("change", function () {
     runSimulation();
-})
+});
+document.getElementById("one").addEventListener("change", function () {
+    runSimulation();
+});
+document.getElementById("two").addEventListener("change", function () {
+    runSimulation();
+});
+document.getElementById("other").addEventListener("change", function () {
+    runSimulation();
+});
+document.getElementById("userValue").addEventListener("input", function () {
+    if (this.value > 500) {
+        this.value = 500;
+    }
+    updateAmountOfSlits()
+    runSimulation();
+});
 document.getElementById("Check").addEventListener("click", function () {
     runErrorCheck();
-})
+});

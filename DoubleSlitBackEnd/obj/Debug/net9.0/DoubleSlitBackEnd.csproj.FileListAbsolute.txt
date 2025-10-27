@@ -26,3 +26,4 @@
 /Users/netzer0/RiderProjects/DoubleSE/DoubleSlitBackEnd/obj/Debug/net9.0/DoubleSlitBackEnd.pdb
 /Users/netzer0/RiderProjects/DoubleSE/DoubleSlitBackEnd/obj/Debug/net9.0/DoubleSlitBackEnd.genruntimeconfig.cache
 /Users/netzer0/RiderProjects/DoubleSE/DoubleSlitBackEnd/obj/Debug/net9.0/ref/DoubleSlitBackEnd.dll
+/Users/netzer0/RiderProjects/DoubleSE/DoubleSlitBackEnd/obj/Debug/net9.0/DoubleSlitBackEnd.sourcelink.json

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 public class DoubleSlitSimulator(SimulationParameters parameters)
 {
    private static readonly double[] SlitCentersBase = { 0.5, -0.5 };
-   private static readonly int[] ErrorSamples = { 5, 10, 15, 20, 25, 30, 35, 40 };
+   private static readonly int[] ErrorSamples = { 5, 10, 15, 20, 25, 30, 35, 70 };
    
    [MethodImpl(MethodImplOptions.AggressiveInlining)]
    private static void NormalizeInPlace(double[] input)
@@ -26,6 +26,10 @@ public class DoubleSlitSimulator(SimulationParameters parameters)
       double a = parameters.SlitWidth * 1e-6;
       double d = parameters.SlitSeparation * 1e-6;
       double l = parameters.ScreenDistance * 1e-2;
+      int amountOfSlits = parameters.AmountOfSlits;
+      int samplesPerSlit = parameters.SamplesPerSlit;
+      if (amountOfSlits > 2) samplesPerSlit = 50;
+
       double physicalPixelSize = parameters.ScreenPhysicalWidth / parameters.PixelCount;
       double[] intensity = new double[parameters.PixelCount];
 
@@ -34,7 +38,7 @@ public class DoubleSlitSimulator(SimulationParameters parameters)
       
       static bool ShouldUseParallel(long estimatedWork, int pixelCount)
       {
-         return estimatedWork >= 200_000 && pixelCount >= 300 && Environment.ProcessorCount > 1;
+         return estimatedWork >= 400_000 && pixelCount >= 300 && Environment.ProcessorCount > 1;
       }
       var parallelOptions = new ParallelOptions {
          MaxDegreeOfParallelism = Math.Max(1, Environment.ProcessorCount - 1) 
@@ -56,21 +60,23 @@ public class DoubleSlitSimulator(SimulationParameters parameters)
       }
       else
       {
-         long estimatedWork = (long)parameters.PixelCount * parameters.SamplesPerSlit;
+         long estimatedWork = (long)parameters.PixelCount * samplesPerSlit * amountOfSlits;
          bool useParallel = ShouldUseParallel(estimatedWork, parameters.PixelCount);
          double k = 2 * Math.PI / lamda;
          if (useParallel)
          {
+            Console.WriteLine("use parallel");
             Parallel.For(0, parameters.PixelCount, parallelOptions, i =>
             {
                double x = (i - halfPixels) * physicalPixelSize;
                double eReal = 0.0, eImag = 0.0;
 
-               foreach (var centerFactor in SlitCentersBase)
+               for (int n = 0; n < amountOfSlits; n++)
                {
-                  double slitCenter = centerFactor * d;
-                  double localOffset = a / parameters.SamplesPerSlit;
-                  for (int j = 0; j < parameters.SamplesPerSlit; j++)
+                  
+                  double slitCenter = (n - (amountOfSlits - 1) / 2.0) * d;
+                  double localOffset = a / samplesPerSlit;
+                  for (int j = 0; j < samplesPerSlit; j++)
                   {
                      double srcX = slitCenter - a * 0.5 + localOffset * (j + 0.5);
                      double dx = x - srcX;
@@ -92,11 +98,11 @@ public class DoubleSlitSimulator(SimulationParameters parameters)
                double x = (i - halfPixels) * physicalPixelSize;
                double eReal = 0.0, eImag = 0.0;
 
-               foreach (var centerFactor in SlitCentersBase)
+               for (int n = 0; n < amountOfSlits; n++)
                {
-                  double slitCenter = centerFactor * d;
-                  double localOffset = a / parameters.SamplesPerSlit;
-                  for (int j = 0; j < parameters.SamplesPerSlit; j++)
+                  double slitCenter = (n - (amountOfSlits - 1) / 2.0) * d;
+                  double localOffset = a / samplesPerSlit;
+                  for (int j = 0; j < samplesPerSlit; j++)
                   {
                      double srcX = slitCenter - a * 0.5 + localOffset * (j + 0.5);
                      double dx = x - srcX;
