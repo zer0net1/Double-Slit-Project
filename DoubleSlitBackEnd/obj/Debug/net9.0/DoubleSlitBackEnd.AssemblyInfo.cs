@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DoubleSlitBackEnd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03ac965e87d61e0e4f2a612ccf1cf7ec5bd237f8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6bd76b143b9068ed57de8e115ac1b9a45cd91d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("DoubleSlitBackEnd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DoubleSlitBackEnd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

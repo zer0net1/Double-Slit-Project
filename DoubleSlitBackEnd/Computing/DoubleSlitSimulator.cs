@@ -152,10 +152,6 @@ public class DoubleSlitSimulator(SimulationParameters parameters)
       }
       NormalizeInPlace(intensityF);
       
-      static bool ShouldUseParallel(long estimatedWork, int pixelCount)
-      {
-          return estimatedWork >= 200_000 && pixelCount >= 300 && Environment.ProcessorCount > 1;
-      }
       var parallelOptions = new ParallelOptions {
           MaxDegreeOfParallelism = Math.Max(1, Environment.ProcessorCount - 1) 
       };
@@ -163,62 +159,31 @@ public class DoubleSlitSimulator(SimulationParameters parameters)
       {
           double error = 0;
           int sampleCount = ErrorSamples[s];
-          long estimatedWork = (long)parameters.PixelCount * sampleCount;
-          bool useParallel = ShouldUseParallel(estimatedWork, parameters.PixelCount);
-          
 
-          if (useParallel)
+          Parallel.For(0, parameters.PixelCount, parallelOptions, i =>
           {
-             Parallel.For(0, parameters.PixelCount, parallelOptions, i =>
+             double x = (i - halfPixels) * physicalPixelSize;
+             double eReal = 0.0, eImag = 0.0;
+
+             foreach (var centerFactor in SlitCentersBase)
              {
-                double x = (i - halfPixels) * physicalPixelSize;
-                double eReal = 0.0, eImag = 0.0;
-
-                foreach (var centerFactor in SlitCentersBase)
+                double slitCenter = centerFactor * d;
+                double localOffset = a / sampleCount;
+                for (int j = 0; j < sampleCount; j++)
                 {
-                   double slitCenter = centerFactor * d;
-                   double localOffset = a / sampleCount;
-                   for (int j = 0; j < sampleCount; j++)
-                   {
-                      double srcX = slitCenter - a * 0.5 + localOffset * (j + 0.5);
-                      double dx = x - srcX;
-                      double r = Math.Sqrt(l * l + dx * dx);
-                      double amplitude = localOffset / r;
-                      double phase = k * r;
-                      eReal += amplitude * Math.Cos(phase);
-                      eImag += amplitude * Math.Sin(phase);
-                   }
+                   double srcX = slitCenter - a * 0.5 + localOffset * (j + 0.5);
+                   double dx = x - srcX;
+                   double r = Math.Sqrt(l * l + dx * dx);
+                   double amplitude = localOffset / r;
+                   double phase = k * r;
+                   eReal += amplitude * Math.Cos(phase);
+                   eImag += amplitude * Math.Sin(phase);
                 }
-
-                intensityH[i] = eReal * eReal + eImag * eImag;
-             });
-          }
-          else
-          {
-             for (int i = 0; i < parameters.PixelCount; i++)
-             {
-                double x = (i - halfPixels) * physicalPixelSize;
-                double eReal = 0.0, eImag = 0.0;
-
-                foreach (var centerFactor in SlitCentersBase)
-                {
-                   double slitCenter = centerFactor * d;
-                   double localOffset = a / sampleCount;
-                   for (int j = 0; j < sampleCount; j++)
-                   {
-                      double srcX = slitCenter - a * 0.5 + localOffset * (j + 0.5);
-                      double dx = x - srcX;
-                      double r = Math.Sqrt(l * l + dx * dx);
-                      double amplitude = localOffset / r;
-                      double phase = k * r;
-                      eReal += amplitude * Math.Cos(phase);
-                      eImag += amplitude * Math.Sin(phase);
-                   }
-                }
-
-                intensityH[i] = eReal * eReal + eImag * eImag;
              }
-          } 
+
+             intensityH[i] = eReal * eReal + eImag * eImag;
+          });
+          
           NormalizeInPlace(intensityH);
 
           for (int i = 0; i < parameters.PixelCount; i++)
